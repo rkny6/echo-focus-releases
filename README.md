@@ -12,7 +12,7 @@ echo-focus Lite 是一款 macOS 菜单栏专注与陪伴应用。它可以记录
 
 ## 下载
 
-发布包将在本仓库的 [Releases](https://github.com/rkny6/echo-focus-releases/releases) 页面提供。每个版本的发布说明会标明版本号、系统要求和校验信息。
+最新版本：**[echo-focus Lite 1.1](https://github.com/rkny6/echo-focus-releases/releases/latest)**（`echo-focus-lite-1.1.dmg`，SHA-256 见发布说明）。历史版本见 [Releases](https://github.com/rkny6/echo-focus-releases/releases) 页面，每个版本的发布说明标明版本号、系统要求和校验信息。
 
 ## 主要功能
 
@@ -64,7 +64,7 @@ ad-hoc 签名不包含开发者证书身份，因此 macOS 可能在应用更新
 
 ## 隐私摘要
 
-- 浏览器地址只用于本机判断域名；浏览记录不会发送给 AI 服务商。应用名称、分类统计、对话内容及角色设定等，可能会发送到**你自行配置的 AI 服务端点**以生成回复。
+- 浏览器地址只用于本机判断域名。绝大多数时候浏览记录只是本机状态；唯一可能把**网站域名**发给 AI 服务商的场合，是专注中触发分心提醒的那一次，且受设置中「提醒时说出网站名称」控制（默认开启，关闭后不含任何域名）；开启「允许读取视频标题」（默认关闭）时还可能包含视频页面标题。应用名称、分类统计、对话内容及角色设定等，可能会发送到**你自行配置的 AI 服务端点**以生成回复。
 - 应用不截屏、不记录键盘输入，也没有账号、遥测或崩溃上报。
 - 数据保存在本机；卸载应用本身不会自动删除用户数据。
 - API key 当前保存在 macOS 偏好设置中，而非 Keychain。建议使用独立且设有消费上限的 API key。
@@ -95,7 +95,7 @@ echo-focus Lite is a macOS menu-bar app for focus and companionship. It can reco
 
 ## Download
 
-Release builds will be published on this repository's [Releases](https://github.com/rkny6/echo-focus-releases/releases) page. Each release will state its version, system requirements, and verification information.
+Latest release: **[echo-focus Lite 1.1](https://github.com/rkny6/echo-focus-releases/releases/latest)** (`echo-focus-lite-1.1.dmg`, SHA-256 in the release notes). Older versions are on the [Releases](https://github.com/rkny6/echo-focus-releases/releases) page; each release states its version, system requirements, and verification information.
 
 ## Features
 
@@ -147,7 +147,7 @@ Ad-hoc signing does not identify a developer certificate, so macOS may ask you t
 
 ## Privacy summary
 
-- Browser addresses are used for local domain classification; browsing records are not sent to AI providers. App names, classification statistics, conversation content, and character settings may be sent to **the AI endpoint you configure** to generate responses.
+- Browser addresses are used for local domain classification. Browsing records normally stay on your machine; the one case where a **site domain** may reach an AI provider is the distraction prompt during a focus session, controlled by "Name the site in reminders" in settings (on by default; with it off no domain is included). With "Allow reading video titles" enabled (off by default), a video page title may also be included. App names, classification statistics, conversation content, and character settings may be sent to **the AI endpoint you configure** to generate responses.
 - The app does not take screenshots or log keystrokes, and has no accounts, telemetry, or crash reporting.
 - Data is stored locally; removing the app does not automatically remove its user data.
 - API keys are currently stored in macOS preferences, not Keychain. Consider using a dedicated API key with a spending limit.
